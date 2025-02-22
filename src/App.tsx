@@ -1,11 +1,12 @@
-import { useState } from "react";
 import "./App.css";
+import { Route, Routes } from "react-router";
+import Notes from "./pages/Notes";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Notes />} />
+    </Routes>
   );
 }
 
