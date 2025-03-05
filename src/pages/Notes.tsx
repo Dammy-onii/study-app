@@ -48,7 +48,9 @@ function Notes() {
         <div className=" flex flex-row items-center gap-2 ">
           {/* <div className=" w-10 h-10 bg-slate-400 "></div> */}
           <h1 className=" myF font-bold ">Study</h1>
-          <h1 className=" text-2xl text-gray-800 tracking-wider ">{note.title}</h1>
+          <h1 className=" text-2xl text-gray-800 tracking-wider ">
+            {note.title}
+          </h1>
         </div>
         <div className=" flex flex-row items-center gap-4 ">
           <span className=" w-10 h-10 bg-red-600 rounded-full flex items-center justify-center ">
@@ -95,6 +97,7 @@ function Notes() {
                 type="file"
                 className="hidden"
                 multiple
+                accept="application/pdf" 
                 onChange={handleFileChange}
               />
             </label>
